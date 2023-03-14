@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/main.css'
+import './assets/Hornbill-Personal Use Black.otf'
 
 const app = createApp(App)
 

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: Hornbill;
+    src: url('@/assets/Hornbill-Personal Use Black.otf');
+}
+
+:root {
+    --main-fore-color: #fffde3;
+    --main-back-color: #25231e;
+}
+
+body {
+    font-family: 'Ubuntu';
+    color: var(--main-fore-color);
+    background-color: var(--main-back-color);
+    margin: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFDD55;
+}

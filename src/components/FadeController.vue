@@ -6,7 +6,6 @@ onMounted(() => {
     const route = useRoute()
 
     function triggerFadeIn() {
-        console.log('fade')
         const content = document.querySelector<HTMLElement>('.fade')!
         content.style.animation = 'none'
         content.offsetHeight

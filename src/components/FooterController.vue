@@ -8,11 +8,13 @@ onMounted(() => {
 
     function moveFooter() {
         setTimeout(() => {
-            console.log(footer.style.top = `${document.querySelector('#content')!.getBoundingClientRect().bottom}px`)
-
-        }, 10)
+            footer.style.top = `${document.querySelector('#content')!.getBoundingClientRect().bottom}px`
+        }, 20)
     }
+
     watch(() => route.fullPath, moveFooter)
+    addEventListener('resize', moveFooter)
+
     moveFooter()
 })
 </script>
@@ -25,7 +27,6 @@ onMounted(() => {
 
 <style scoped>
 footer {
-    bottom: 0;
     position: absolute;
     transition: top 0.5s;
 }
