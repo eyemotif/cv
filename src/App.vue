@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import FadeController from './components/FadeController.vue'
+import FooterController from './components/FooterController.vue'
 </script>
 
 <template>
@@ -13,9 +15,17 @@ import { RouterLink, RouterView } from 'vue-router'
     </section>
   </header>
 
-  <section>
-    <RouterView />
-  </section>
+  <FadeController>
+    <section id="content">
+      <RouterView />
+    </section>
+  </FadeController>
+
+  <FooterController>
+    <br>
+    <hr>
+    <p>This is a footer!</p>
+  </FooterController>
 </template>
 
 <style scoped>
