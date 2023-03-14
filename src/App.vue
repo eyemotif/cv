@@ -4,7 +4,22 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
+    <section>
+      <p>Welcome to my page!</p>
+      <nav>
+        <RouterLink :to="{ name: 'home' }">Home</RouterLink>
+        <RouterLink :to="{ name: 'about' }">About</RouterLink>
+      </nav>
+    </section>
   </header>
 
-  <RouterView />
+  <section>
+    <RouterView />
+  </section>
 </template>
+
+<style scoped>
+nav>* {
+  margin: 0.2em;
+}
+</style>
