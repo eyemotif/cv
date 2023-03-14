@@ -7,7 +7,7 @@
 
 :root {
     --main-fore-color: #fffde3;
-    --main-back-color: #25231e;
+    --main-back-color: #1f1c18;
 }
 
 body {
@@ -20,4 +20,31 @@ body {
 a {
     text-decoration: none;
     color: #FFDD55;
+}
+
+.rainbow {
+    background-image: linear-gradient(270deg,
+            hsl(0deg, 100%, 50%) 0%,
+            hsl(30, 100%, 50%) 8%,
+            hsl(60deg, 100%, 50%) 16%,
+            hsl(90deg, 100%, 50%) 24%,
+            hsl(120deg, 100%, 50%) 32%,
+            hsl(150deg, 100%, 50%) 40%,
+            hsl(180deg, 100%, 50%) 48%,
+            hsl(210deg, 100%, 50%) 56%,
+            hsl(240deg, 100%, 50%) 64%,
+            hsl(270deg, 100%, 50%) 72%,
+            hsl(300deg, 100%, 50%) 80%,
+            hsl(330, 100%, 50%) 100%);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    to {
+        background-position: 100% 100%;
+    }
 }

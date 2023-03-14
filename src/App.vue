@@ -1,13 +1,37 @@
 <script setup lang="ts">
-import { RouterLink, RouterView, useRouter } from 'vue-router'
+import { ref, computed, onMounted } from 'vue'
+import { RouterLink, RouterView } from 'vue-router'
 import FadeController from './components/FadeController.vue'
 import FooterController from './components/FooterController.vue'
+
+const greeting = 'Hi! ' + (() => {
+  switch (new Date().getHours()) {
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+      return 'Good morning!'
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+      return 'Good afternoon!'
+    default:
+      return 'Good evening!'
+  }
+})()
 </script>
 
 <template>
   <header>
     <section class="welcome">
-      <p>Welcome to my page!</p>
+      <p class="greet">{{ greeting }}</p>
+      <p>I'm <span class="iris">Iris</span><span class="rainbow">!</span>
+      </p>
     </section>
     <section>
       <nav>
@@ -16,6 +40,8 @@ import FooterController from './components/FooterController.vue'
       </nav>
     </section>
   </header>
+
+  <br>
 
   <section id="content">
     <FadeController>
@@ -31,15 +57,32 @@ import FooterController from './components/FooterController.vue'
 </template>
 
 <style scoped>
-nav>* {
+header p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+header nav>* {
   margin: 0.2em;
 }
 
 header .welcome {
   font-family: Hornbill;
   text-shadow: 0.25rem 0.25rem black;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #FFDD55;
+}
+
+header .greet {
+  font-size: 2rem;
+}
+
+header .iris {
+  color: #cf86e3;
+}
+
+header .rainbow {
+  text-shadow: none;
 }
 
 footer {
