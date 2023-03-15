@@ -23,9 +23,9 @@ a {
 }
 
 .rainbow {
-    background-image: linear-gradient(270deg,
+    background-image: repeating-linear-gradient(45deg,
             hsl(0deg, 100%, 50%) 0%,
-            hsl(30, 100%, 50%) 8%,
+            hsl(30deg, 100%, 50%) 8%,
             hsl(60deg, 100%, 50%) 16%,
             hsl(90deg, 100%, 50%) 24%,
             hsl(120deg, 100%, 50%) 32%,
@@ -35,16 +35,26 @@ a {
             hsl(240deg, 100%, 50%) 64%,
             hsl(270deg, 100%, 50%) 72%,
             hsl(300deg, 100%, 50%) 80%,
-            hsl(330, 100%, 50%) 100%);
-    background-size: 400% auto;
+            hsl(330deg, 100%, 50%) 88%,
+            hsl(30deg, 100%, 50%) 96%);
+    background-size: 5000% 5000%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow 5s linear infinite;
+    animation: rainbow 30s linear infinite;
 }
 
 @keyframes rainbow {
-    to {
-        background-position: 100% 100%;
+    0% {
+        background-position: 50% 0%;
     }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+
 }
