@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import FadeController from './components/FadeController.vue'
 import FooterController from './components/FooterController.vue'
+
+import githubIcon from './assets/github-mark-white.svg'
 
 const greeting = 'Hi! ' + (() => {
   switch (new Date().getHours()) {
@@ -12,16 +13,16 @@ const greeting = 'Hi! ' + (() => {
     case 9:
     case 10:
     case 11:
-      return 'Good morning!'
+      return 'Good morning.'
     case 12:
     case 13:
     case 14:
     case 15:
     case 16:
     case 17:
-      return 'Good afternoon!'
+      return 'Good afternoon.'
     default:
-      return 'Good evening!'
+      return 'Good evening.'
   }
 })()
 </script>
@@ -52,7 +53,9 @@ const greeting = 'Hi! ' + (() => {
   <FooterController>
     <br>
     <hr>
-    <p>This is a footer!</p>
+    <nav class="social">
+      <a href="https://github.com/eyemotif"><img class="icon github" :src="githubIcon"></a>
+    </nav>
   </FooterController>
 </template>
 
@@ -103,6 +106,9 @@ footer hr {
     radial-gradient(3.75px at 50% calc(100% + 2.25px), #0000 99%, #000 101%) 50% calc(100% - 3px)/12px calc(51% - 3px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask); */
+}
 
+footer .icon {
+  height: 32px;
 }
 </style>
