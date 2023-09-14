@@ -29,21 +29,23 @@ const greeting = 'Hi! ' + (() => {
 
 <template>
   <header>
-    <section class="welcome">
+    <section class="left welcome">
       <p class="greet">{{ greeting }}</p>
       <p>I'm <span class="iris">Iris</span><span class="rainbow">!</span>
       </p>
     </section>
-    <section>
+    <section class="right">
       <nav>
         <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         <RouterLink :to="{ name: 'about' }">About</RouterLink>
+        <RouterLink :to="{ name: 'not-found' }">CV</RouterLink>
       </nav>
     </section>
   </header>
 
   <br>
 
+  <!-- #content needed for FooterController -->
   <section id="content">
     <FadeController>
       <RouterView />
@@ -60,6 +62,10 @@ const greeting = 'Hi! ' + (() => {
 </template>
 
 <style scoped>
+header {
+  overflow: auto;
+}
+
 header p {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -67,6 +73,7 @@ header p {
 
 header nav>* {
   margin: 0.2em;
+  display: block;
 }
 
 header .welcome {
@@ -74,6 +81,16 @@ header .welcome {
   text-shadow: 0.25rem 0.25rem black;
   font-size: 4rem;
   color: #FFDD55;
+}
+
+header .left {
+  float: left;
+  width: 90%
+}
+
+header .right {
+  float: right;
+  width: 10%;
 }
 
 header .greet {
@@ -88,6 +105,7 @@ header .rainbow {
   text-shadow: none;
 }
 
+
 footer {
   width: 80%;
   text-align: center;
@@ -98,14 +116,6 @@ footer hr {
   border-width: 0;
   color: var(--main-fore-color);
   background-color: var(--main-fore-color);
-
-  /* --mask:
-    radial-gradient(3.75px at 50% 5.25px, #000 99%, #0000 101%) calc(50% - 6px) 0/12px 51% repeat-x,
-    radial-gradient(3.75px at 50% -2.25px, #0000 99%, #000 101%) 50% 3px/12px calc(51% - 3px) repeat-x,
-    radial-gradient(3.75px at 50% calc(100% - 5.25px), #000 99%, #0000 101%) calc(50% - 6px) 100%/12px 51% repeat-x,
-    radial-gradient(3.75px at 50% calc(100% + 2.25px), #0000 99%, #000 101%) 50% calc(100% - 3px)/12px calc(51% - 3px) repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask); */
 }
 
 footer .icon {
