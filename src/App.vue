@@ -56,7 +56,7 @@ const greeting = 'Hi! ' + (() => {
     <br>
     <hr>
     <nav class="social">
-      <a href="https://github.com/eyemotif"><img class="icon github" :src="githubIcon"></a>
+      <a href="https://github.com/eyemotif/cv"><img class="icon github" :src="githubIcon"></a>
     </nav>
   </FooterController>
 </template>
