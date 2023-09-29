@@ -38,7 +38,7 @@ const greeting = 'Hi! ' + (() => {
       <nav>
         <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         <RouterLink :to="{ name: 'about' }">About</RouterLink>
-        <RouterLink :to="{ name: 'not-found' }">CV</RouterLink>
+        <RouterLink :to="{ name: 'cv' }">CV</RouterLink>
       </nav>
     </section>
   </header>
@@ -120,5 +120,9 @@ footer hr {
 
 footer .icon {
   height: 32px;
+}
+
+[aria-current] {
+  font-weight: bold;
 }
 </style>

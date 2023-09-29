@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
+      path: "/cv",
+      name: 'cv',
+      component: () => import('../views/CVView.vue')
+    },
+    {
       path: '/:catch(.*)*',
       name: 'not-found',
       component: () => import('../views/404View.vue')
