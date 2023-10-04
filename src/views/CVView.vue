@@ -2,7 +2,7 @@
 
 <template>
     <aside>
-        <a href="https://file.frith.gay/Resume.pdf"><u>printer-friendly version</u></a>
+        <a href="https://file.frith.gay/iris-resume.pdf"><u>printer-friendly version</u></a>
     </aside>
     <br> <br>
     <h1>Iris Shane</h1>
