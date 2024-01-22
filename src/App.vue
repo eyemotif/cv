@@ -39,6 +39,7 @@ const greeting = 'Hi! ' + (() => {
         <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         <RouterLink :to="{ name: 'about' }">About</RouterLink>
         <RouterLink :to="{ name: 'cv' }">CV</RouterLink>
+        <RouterLink :to="{ name: 'projects' }">Projects</RouterLink>
       </nav>
     </section>
   </header>
