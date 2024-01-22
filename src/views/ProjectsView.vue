@@ -34,7 +34,7 @@ const projects: Project[] = [
         title: 'Eyebot',
         technologies: ['HTTP', 'WebSockets', 'Rust', 'Async'],
         description: `Created an automated helper for the video streaming service Twitch.
-        Eyebot allows a user to define custom commands, which are typed into the stream\'s chat room. Then the "bot" will automatically respond to with an appropriate message.
+        Eyebot allows a user to define custom commands, which are typed into the stream\'s chat room. Then the "bot" will automatically respond with an appropriate message.
         An extensive guide on how to use the program was also written in the project\'s readme file.`,
         links: [{ link: 'https://github.com/eyemotif/eyebot-rs' }]
     },
@@ -45,7 +45,7 @@ const projects: Project[] = [
         When used with Eyebot, the members of the stream\'s chat room can activate a user-defined set of sound effects.
         Another feature of Comet is a stream chat room overlay, allowing the chat to become a part of the video portion of the stream. There are many similar overlays out there, but I was never quite satisfied with them.
         Comet is entirely based on a custom WebSocket API. So, even though it was designed to integrate with Eyebot and Twitch streams, it could theoretically be used for any backend or streaming service.`,
-        links: [{ link: 'https://github.com/eyemotif/eyebot-rs' }]
+        links: [{ link: 'https://github.com/eyemotif/comet' }]
     }
 ]
 
