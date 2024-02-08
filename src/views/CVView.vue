@@ -10,7 +10,12 @@
     <div class="left">
         <h4>EXPERIENCE</h4>
         <section>
-            <h3><u><strong>Empow</strong>, Newton, MA</u></h3>
+            <h3>
+                <u>
+                    <strong>Empow</strong>,
+                    Newton, MA
+                </u>
+            </h3>
             <h5>August 2018: Counseling Internship</h5>
             <ul>
                 <li>
@@ -36,8 +41,12 @@
         </section>
 
         <section>
-            <h3><u><strong>Honors Swift Programming Course</strong>, Newton South High
-                    School, Newton, MA</u></h3>
+            <h3>
+                <u>
+                    <strong>Honors Swift Programming Course</strong>,
+                    Newton South High School, Newton, MA
+                </u>
+            </h3>
             <h5>School year of 2018-2019</h5>
             <p>
                 Attended a class taught by an expert in computer science, and
@@ -48,14 +57,22 @@
 
         <h4>EDUCATION</h4>
         <section>
-            <h3><u><strong>Newton South High School</strong>, Newton,
-                    MA</u></h3>
+            <h3>
+                <u>
+                    <strong>Newton South High School</strong>,
+                    Newton, MA
+                </u>
+            </h3>
             <p>Graduated high school in 2020, with an SAT score of 1260.</p>
         </section>
 
         <section>
-            <h3><u><strong>Rochester Institute of Technology</strong>,
-                    Rochester, NY</u></h3>
+            <h3>
+                <u>
+                    <strong>Rochester Institute of Technology</strong>,
+                    Rochester, NY
+                </u>
+            </h3>
             <p>Accepted into the New Interactive Media program with a merit scholarship.</p>
         </section>
     </div>
@@ -81,16 +98,31 @@
 
         <section>
             <h4>PROGRAMMING EXPERIENCE</h4>
-            <p>C#/F#/Java: Desktop applications, <strong>5
-                    years</strong></p>
-            <p>Javascript/Typescript: Frontend/Web design, <strong>3
-                    years</strong></p>
-            <p>Javascript/Typescript: Backend/Full-stack app development,
-                <strong>4 years</strong>
+            <p>
+                C#/F#/Java: Desktop applications
+                <br>
+                <strong>5 years ★★★☆☆</strong>
             </p>
-            <p>Vue + Typescript: Full-Stack app development, <strong>1
-                    year</strong></p>
-            <p>Rust: Web Server/HTTP API development: <strong>2 years</strong>
+            <p>
+                Javascript/Typescript: Frontend/Web design
+                <br>
+                <strong>3 years ★★★★☆</strong>
+            </p>
+            <p>
+                Javascript/Typescript: Backend/Full-stack app development
+                <br>
+                <strong>4 years ★★★★★</strong>
+            </p>
+            <p>
+                Vue + Typescript: Full-Stack app development
+                <br>
+                <strong>1 year ★★★★☆</strong>
+            </p>
+            <p>
+                Rust: Web Server/HTTP API development
+                <br>
+                <strong>2 years ★★★☆☆</strong>
+                <br>
                 <em> (running the website you're viewing this on!)</em>
             </p>
         </section>

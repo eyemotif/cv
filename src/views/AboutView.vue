@@ -1,15 +1,18 @@
 <template>
     <h1>I'm an artist.</h1>
     <p>
-        I love making art of all kinds, whether it be websites, RESTful APIs,
-        music, or even fictional languages.
+        Over 5 years of working with Typescript, Vue, C#, Java, as well as many other kinds of frontend and backend
+        technologies, I've built up a thorough foundation of full-stack development knowledge, which allows me to create
+        robust and scalable applications.
     </p>
     <p>
-        I also think creating art with others is a beautiful thing. I love
-        collaborating and working in teams!
+        My love for computers and videogames, which started as far back as when I was in
+        elementary school, quickly evolved into a passion for learning all things programming, as well as building many
+        programming projects over the years.
     </p>
     <p>
-        I'm passionate about everything I make and work on, and I'm always
-        searching for new ways to make more art.
+        I always have a finger on the pulse of the current affairs and technologies of
+        software development, which combined with my articulate communication, makes me a perfect fit for working on even
+        more ambitious projects that can further elevate my professional capabilities.
     </p>
 </template>

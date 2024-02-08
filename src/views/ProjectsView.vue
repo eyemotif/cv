@@ -16,7 +16,7 @@ const projects: Project[] = [
         title: 'iris.frith.gay',
         technologies: ['Vue', 'Typescript', 'Nginx'],
         description: `Created a personal website as an online, interactive version of my resume.
-        It\'s what you\'re reading right now!`,
+        It\'s what you\'re on right now!`,
         links: [{ link: 'https://github.com/eyemotif/cv' }]
     },
     {
@@ -33,18 +33,18 @@ const projects: Project[] = [
     {
         title: 'Eyebot',
         technologies: ['HTTP', 'WebSockets', 'Rust', 'Async'],
-        description: `Created an automated helper for the video streaming service Twitch.
-        Eyebot allows a user to define custom commands, which are typed into the stream\'s chat room. Then the "bot" will automatically respond with an appropriate message.
+        description: `Created an automated helper for the video livestreaming service Twitch.
+        Eyebot allows a user to define custom commands, which are typed into the livestream\'s chat room. Then the "bot" will automatically respond with an appropriate message.
         An extensive guide on how to use the program was also written in the project\'s readme file.`,
         links: [{ link: 'https://github.com/eyemotif/eyebot-rs' }]
     },
     {
         title: 'Comet',
         technologies: ['WebSockets', 'Webpack', 'Typescript', 'Async'],
-        description: `Created a sort of frontend for Eyebot. It allows a user to add several features to their video streaming content.
-        When used with Eyebot, the members of the stream\'s chat room can activate a user-defined set of sound effects.
-        Another feature of Comet is a stream chat room overlay, allowing the chat to become a part of the video portion of the stream. There are many similar overlays out there, but I was never quite satisfied with them.
-        Comet is entirely based on a custom WebSocket API. So, even though it was designed to integrate with Eyebot and Twitch streams, it could theoretically be used for any backend or streaming service.`,
+        description: `Created a sort of frontend for Eyebot. It allows a user to add several features to their video livestreaming content.
+        When used with Eyebot, the members of the livestream\'s chat room can activate a user-defined set of sound effects.
+        Another feature of Comet is a livestream chat room overlay, allowing the chat to become a part of the video portion of the stream. There are many similar overlays out there, but I was never quite satisfied with them.
+        Comet is entirely based on a custom WebSocket API. So, even though it was designed to integrate with Eyebot and Twitch livestreams, it could theoretically be used for any backend or streaming service.`,
         links: [{ link: 'https://github.com/eyemotif/comet' }]
     }
 ]

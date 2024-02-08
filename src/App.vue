@@ -4,6 +4,7 @@ import FadeController from './components/FadeController.vue'
 import FooterController from './components/FooterController.vue'
 
 import githubIcon from './assets/github-mark-white.svg'
+import linkedinIcon from './assets/linkedin-3.svg'
 
 const greeting = 'Hi! ' + (() => {
   switch (new Date().getHours()) {
@@ -58,6 +59,7 @@ const greeting = 'Hi! ' + (() => {
     <hr>
     <nav class="social">
       <a href="https://github.com/eyemotif/cv"><img class="icon github" :src="githubIcon"></a>
+      <a href="https://www.linkedin.com/in/iris-shane-bb823a2a6/"><img class="icon linkedin" :src="linkedinIcon"></a>
     </nav>
   </FooterController>
 </template>
@@ -121,6 +123,8 @@ footer hr {
 
 footer .icon {
   height: 32px;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 [aria-current] {
